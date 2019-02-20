@@ -1,5 +1,5 @@
 <?php
-timeOfDay(date("H"));
+date_default_timezone_set("Europe/Amsterdam");
 
 function timeOfDay($time)
 {
@@ -23,29 +23,29 @@ function timeOfDay($time)
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body class="">
+<body class="<?php echo timeOfDay(date("H")); ?>">
 
    <style>
      .nacht{
-       background-image: url(img/night.png);
+       background-image: url(images/night.png);
        text-align: center;
        margin-top: 280px;
      }
 
      .morgen{
-       background-image: url(img/morning.png);
+       background-image: url(images/morning.png);
        text-align: center;
        margin-top: 280px;
      }
 
      .middag{
-       background-image: url(img/afternoon.png);
+       background-image: url(images/afternoon.png);
        text-align: center;
        margin-top: 280px;
      }
 
      .avond{
-       background-image: url(img/evening.png);
+       background-image: url(images/evening.png);
        text-align: center;
        margin-top: 280px;
      }
