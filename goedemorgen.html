@@ -1,0 +1,54 @@
+<?php
+timeOfDay(date("H"));
+
+function timeOfDay($time)
+{
+  if ($time < "6") {
+    return "nacht";
+  } elseif ($time < "12") {
+    return "morgen";
+  } elseif ($time < "18") {
+    return "middag";
+  } elseif ($time < "24") {
+    return "avond";
+  }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body class="">
+
+   <style>
+     .nacht{
+       background-image: url(img/night.png);
+       text-align: center;
+       margin-top: 280px;
+     }
+
+     .morgen{
+       background-image: url(img/morning.png);
+       text-align: center;
+       margin-top: 280px;
+     }
+
+     .middag{
+       background-image: url(img/afternoon.png);
+       text-align: center;
+       margin-top: 280px;
+     }
+
+     .avond{
+       background-image: url(img/evening.png);
+       text-align: center;
+       margin-top: 280px;
+     }
+   </style>
+</body>
+</html>
