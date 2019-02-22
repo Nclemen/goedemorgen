@@ -25,6 +25,8 @@ function timeOfDay($time)
 </head>
 <body class="<?php echo timeOfDay(date("H")); ?>">
 
+    <h1 id="groet">Goede <?php echo timeOfDay(date("H")); ?>!</h1>
+    <h2 id="tijd">Het is nu <?php echo date("H:i"); ?></h2>
    <style>
      .nacht{
        background-image: url(images/night.png);
